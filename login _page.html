@@ -1,0 +1,131 @@
+<!doctype html>
+<html> 
+ <head>
+<style>
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+body{
+  background: #7FB3D5;
+}
+.container{
+  display: grid;
+  width: 600px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  margin-top: 50%;
+  padding: 80px;
+  border-right: 45px solid #0066ff;
+}
+.loginform{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.namebox{
+  width: 600px;
+  padding: 13px;
+  font-size: 20px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.namebox:focus {
+  border: 2px solid #0066ff;
+  cursor: text;
+}
+.namearea{
+  position: relative;
+  top: -10px;
+  
+}
+.passbox{
+  width: 600px;
+  padding: 13px;
+  font-size: 20px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.passbox:focus {
+  border: 2px solid #0066ff;
+  cursor: text;
+}
+.loginbutton{
+  position: relative;
+  padding: 13px;
+  top: 30px;
+  font-size: 20px;
+  margin: 10px;
+  outline: none;
+  border-radius: 5px;
+  background: #0066ff;
+  color: white;
+  text-transform: uppercase;
+}
+h1{
+  position: relative;
+  top: -15px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #0066ff;
+  left: 7.3px;
+  
+}
+.n3{
+   position: relative;
+   left: 7.3px;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+}
+.p3{
+  position: relative;
+  left: 7.3px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.r3{
+  position: relative;
+  left: 29px;
+  top: -24px;
+}
+.checkbox{
+  position: relative;
+  left: 7.3px;
+}
+.f3{
+  position: relative;
+  display: flex;
+  width: 200px;
+  left: 450px;
+  letter-spacing: 1px;
+  color: #0066ff;
+  top: -45px;
+}
+#gif{
+
+  text-decoration: none; 
+}
+</style>
+
+</head> 
+ <body> 
+  <div class="container"> 
+   <h1>ACCOUNT LOGIN</h1> 
+   <form class="loginform" method="POST" action=""> <label for="username" class="namearea"> <h3 class="n3">Username</h3> <input type="text" id="username" name="username" class="namebox"> </label> 
+    <br> <label for="pass" class="passarea"> <h3 class="p3">Password</h3> <input type="password" id="pass" name="password" class="passbox"> </label> 
+    <br> 
+    <div> 
+     <input type="checkbox" name="check" class="checkbox"> <label class="r3"> <h3>Remember me</h3> </label> 
+     <h3 class="f3"><a href="" id="gif">Forget Password?</a></h3> 
+    </div> 
+    <input type="submit" value="Log in" class="loginbutton"> 
+   </form> 
+  </div> 
+ </body>
+</html>
